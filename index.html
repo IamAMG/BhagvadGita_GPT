@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagavad Gita_GPT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: "#fff7ed",
+                            100: "#ffedd5",
+                            200: "#fed7aa",
+                            300: "#fdba74",
+                            400: "#fb923c",
+                            500: "#f97316",
+                            600: "#ea580c",
+                            700: "#c2410c",
+                            800: "#9a3412",
+                            900: "#7c2d12",
+                            950: "#431407",
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white transition-colors duration-200">
+    <header class="bg-primary-500 dark:bg-primary-800 text-white shadow-md">
+        <div class="container mx-auto py-4 px-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl md:text-4xl font-bold">Bhagavad Gita_GPT</h1>
+                <button id="theme-toggle" class="p-2 rounded-full bg-white/10 hover:bg-white/20">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 block dark:hidden"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 hidden dark:block"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+              />
+            </svg>
+          </button>
+            </div>
+            <nav class="mt-4">
+                <ul class="flex flex-wrap justify-center space-x-2 md:space-x-6">
+                    <li>
+                        <a href="index.html" class="block px-3 py-2 hover:bg-white/10 rounded transition-colors">Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block px-3 py-2 hover:bg-white/10 rounded transition-colors"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block px-3 py-2 hover:bg-white/10 rounded transition-colors"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="assistant.html"
+                class="block px-3 py-2 hover:bg-white/10 rounded transition-colors"
+                >Assistant</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto py-8 px-4">
+      <section class="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 mb-8">
+        <h2
+          class="text-3xl font-semibold mb-4 text-primary-600 dark:text-primary-400"
+        >
+          Welcome to Bhagavad Gita_GPT
+        </h2>
+        <p class="text-slate-700 dark:text-slate-300">
+          Explore the timeless wisdom of the Bhagavad Gita through our
+          interactive platform. Get insights, explanations, and guidance from
+          this sacred text using modern AI technology.
+        </p>
+      </section>
+
+      <section class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
+          <h3
+            class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-400"
+          >
+            Explore Chapters
+          </h3>
+          <p class="text-slate-700 dark:text-slate-300 mb-4">
+            Browse through the 18 chapters of the Bhagavad Gita and discover the
+            profound teachings in each section.
+          </p>
+          <button
+            class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-bold py-2 px-4 rounded transition-colors"
+          >
+            View Chapters
+          </button>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
+          <h3
+            class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-400"
+          >
+            Ask the Assistant
+          </h3>
+          <p class="text-slate-700 dark:text-slate-300 mb-4">
+            Have questions about the Bhagavad Gita? Our AI assistant can help
+            answer your queries and provide insights.
+          </p>
+          <button
+            class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-bold py-2 px-4 rounded transition-colors"
+          >
+            Ask Now
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-800 dark:bg-slate-950 text-white mt-8 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Bhagavad Gita_GPT. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
